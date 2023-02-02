@@ -94,14 +94,16 @@ aside {
   display: flex;
   justify-content: space-between;
 }
-.list-group{
+/* .list-group{
     border: 1px solid  #410606;
     border-radius: 5px;
-}
+} */
 .list-group h3{
     font-size: 22px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+
+}
+.list-container{
+    margin-top:5px;
 }
 
 footer {
