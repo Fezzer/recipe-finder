@@ -13,7 +13,7 @@ function getRecipes() {
     var userIngredients = ingredients.join(",+");
   
     // Define and build API URL to be called
-    var ingredientsURL = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=" + apiKey + "&ranking=1&ingredients=" + userIngredients + "=6";
+    var ingredientsURL = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=" + apiKey + "&ranking=1&ingredients=" + userIngredients + "&number=6";
 
     // Run API fetch and return data into response
     $.ajax ({
@@ -25,6 +25,7 @@ function getRecipes() {
 
     // Trigger HTML printing function - response is fed through
     displayRecipe(response);
+    console.log(response);
     });
 };
 
