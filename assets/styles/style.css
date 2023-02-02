@@ -58,6 +58,33 @@ header {
   height: 50px;
   background: #D9D9D9;
   }
+
+.form-label{
+    font-size: 25px;
+}
+aside{
+    border-right: 3px solid #410606;;
+}
+.recepie-search{
+    width: 100%;
+}
+.add-button{
+    background-color:#643f3f;;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group-append{
+    margin-top: 10px;
+}
+
 footer {
 position: absolute;
 width: 531px;
