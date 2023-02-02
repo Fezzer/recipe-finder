@@ -12,6 +12,7 @@ body {
     height: 200px;
     margin: 0 auto;
     overflow: hidden;
+    transition: 1s;
  }
  .circle:hover{
     width: 280px;
