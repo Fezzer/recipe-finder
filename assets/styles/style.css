@@ -110,6 +110,11 @@ aside {
   display: flex;
     justify-content: space-between;
 }
+.recipe_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 footer {
   position: absolute;

@@ -18,14 +18,12 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>Muchos Foodios</title>
-</head>
-<body>
-    <header> <h1>Muchos Foodios</h1>
-    </header>
-<!-- THE FIRST PART: A jumbotron to provide a welcome message and display current time-->
-  <section>
-
-    <div class="jumbotron jumbotron-fluid" id="jumbo">
+  </head>
+  <body>
+    <header><h1>Muchos Foodios</h1></header>
+    <!-- THE FIRST PART: A jumbotron to provide a welcome message and display current time-->
+    <section>
+      <div class="jumbotron jumbotron-fluid" id="jumbo">
         <div class="container">
           <h1 class="display-4">
             COOKING INSPIRATION FROM YOUR KITCHEN STOCK!
@@ -34,197 +32,209 @@
             Try your recipe, get your ingredients and have a meal.
           </p>
         </div>
-    <!--Using moment.js package, we display the current time-->
-      <div id="current-time"></div>
-    </div>
-  </section>
-<!--jumbostron ends-->
+        <!--Using moment.js package, we display the current time-->
+        <div id="current-time"></div>
+      </div>
+    </section>
+    <!--jumbostron ends-->
 
+    <div class="container">
+      <!--THE THIRD PART: handle a transition: On click this button, it will display the cards and sidebar menu page and hide the 'FIRST' and 'SECOND' part -->
 
-<div class="container">
- 
-  <!--THE THIRD PART: handle a transition: On click this button, it will display the cards and sidebar menu page and hide the 'FIRST' and 'SECOND' part -->
+      <!--The first row  -->
+      <div class="row" id="row_1">
+        <div class="col-md-12">
+          <button type="button" id="enter">Let's Cook</button>
+        </div>
+      </div>
 
-  <!--The first row  -->
-  <div class="row" id="row_1">
-    <div class="col-md-12">
-      <button type="button" id="enter">Let's Cook</button>
-    </div>
-  </div>
-
-  <!--THE SECOND PART: show images that illustrate the function of the app: translating users
+      <!--THE SECOND PART: show images that illustrate the function of the app: translating users
     ingredients, to provide recipe and display the final output as a meal-->
 
-    <!--The second Row-->
-        <div class="row"  id="row_2">
-             <div class="col-md-4">
-                       <div class="circle">
-                         <img src="https://www.foodingredientfacts.org/wp-content/uploads/2017/11/AdobeStock_49033437-dont-fear-ingredients-in-your-food-768x587.jpeg" alt="Image">
-                       </div>
-                       <div class="label"><h3>Ingredients</h3> </div>
-              </div>
-
-              <div class="col-md-4">
-                       <div class="circle">
-                         <img src="https://www.veganfoodandliving.com/wp-content/uploads/2018/05/GettyImages-695984364.jpg" alt="Image">
-                       </div>
-                       <div class="label"><h3>Recipe</h3> </div>
-              </div>
-
-                <div class="col-md-4">
-                       <div class="circle">
-                         <img src="https://kutv.com/resources/media2/16x9/full/1015/center/80/6b7a7c7c-3c44-489c-9880-4a17508cdc6d-large16x9_Postworkout_meal.jpg" alt="Image">
-                       </div>
-                       <div class="label"><h3>Meal</h3> </div>
-              </div>
-            </div>
-
-
-<!--THE THIRD PART: It contains all elements for user's interactive interface-->
-
-  <!--The third row-->
-  <div class="row" id="row_3" >
-
-  <!-- Puspita form enters here -->
-  <div class="container-fluid" style="margin-top: 80px">
-    <div>
-      <aside class="col-lg-3 pb-3">
-        <h2 id="form-heading" class="mt-1 h3 form-label">
-          Search for a Recipe:
-        </h2>
-        <form id="search-form" class="form">
-          <div class="form-inline form-group">
-            <div class="input-group form-outline mb-3">
-              <input
-                class="form-control recepie-search"
-                type="text"
-                id="search-input"
-                placeholder="Type Ingredients..."
-              />
-              <div class="input-group-append">
-                <button
-                  type="submit"
-                  class="add-button"
-                  id="add-button"
-                  aria-label="submit add"
-                >
-                  Add
-                </button>
-                <button
-                  type="submit"
-                  class="add-button"
-                  id="search-button"
-                  aria-label="submit search"
-                >
-                  Search
-                </button>
-              </div>
-            </div>
+      <!--The second Row-->
+      <div class="row" id="row_2">
+        <div class="col-md-4">
+          <div class="circle">
+            <img
+              src="https://www.foodingredientfacts.org/wp-content/uploads/2017/11/AdobeStock_49033437-dont-fear-ingredients-in-your-food-768x587.jpeg"
+              alt="Image"
+            />
           </div>
-        </form>
-        <div class="list-group" id="history">
-          <h3>List of Ingredients</h3>
+          <div class="label"><h3>Ingredients</h3></div>
         </div>
-        <div class="list-container">
-          <ul class="list-group">
-            <li class="list-group-item">
-              Potato <i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-            <li class="list-group-item">
-              Potato<i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-            <li class="list-group-item">
-              Potato<i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-            <li class="list-group-item">
-              Potato<i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-            <li class="list-group-item">
-              Potato<i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-            <li class="list-group-item">
-              Potato<i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-          </ul>
+
+        <div class="col-md-4">
+          <div class="circle">
+            <img
+              src="https://www.veganfoodandliving.com/wp-content/uploads/2018/05/GettyImages-695984364.jpg"
+              alt="Image"
+            />
+          </div>
+          <div class="label"><h3>Recipe</h3></div>
         </div>
-      </aside>
-      <div class="col-lg-9 pb-3">
-        <section class="mt-3"><div></div></section>
+
+        <div class="col-md-4">
+          <div class="circle">
+            <img
+              src="https://kutv.com/resources/media2/16x9/full/1015/center/80/6b7a7c7c-3c44-489c-9880-4a17508cdc6d-large16x9_Postworkout_meal.jpg"
+              alt="Image"
+            />
+          </div>
+          <div class="label"><h3>Meal</h3></div>
+        </div>
+      </div>
+
+      <!--THE THIRD PART: It contains all elements for user's interactive interface-->
+
+      <!--The third row-->
+      <div class="row" id="row_3"></div>
+
+      <!--The fourth row-->
+
+      <!-- Puspita form enters here -->
+      <div class="container-fluid" style="margin-top: 80px">
+        <div class="recipe_container">
+          <aside class="col-lg-3 pb-3">
+            <h2 id="form-heading" class="mt-1 h3 form-label">
+              Search for a Recipe:
+            </h2>
+            <form id="search-form" class="form">
+              <div class="form-inline form-group">
+                <div class="input-group form-outline mb-3">
+                  <input
+                    class="form-control recepie-search"
+                    type="text"
+                    id="search-input"
+                    placeholder="Type Ingredients..."
+                  />
+                  <div class="input-group-append">
+                    <button
+                      type="submit"
+                      class="add-button"
+                      id="add-button"
+                      aria-label="submit add"
+                    >
+                      Add
+                    </button>
+                    <button
+                      type="submit"
+                      class="add-button"
+                      id="search-button"
+                      aria-label="submit search"
+                    >
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="list-group" id="history">
+              <h3>List of Ingredients</h3>
+            </div>
+            <div class="list-container">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  Potato <i class="fa fa-trash" aria-hidden="true"></i>
+                </li>
+                <li class="list-group-item">
+                  Potato<i class="fa fa-trash" aria-hidden="true"></i>
+                </li>
+                <li class="list-group-item">
+                  Potato<i class="fa fa-trash" aria-hidden="true"></i>
+                </li>
+                <li class="list-group-item">
+                  Potato<i class="fa fa-trash" aria-hidden="true"></i>
+                </li>
+                <li class="list-group-item">
+                  Potato<i class="fa fa-trash" aria-hidden="true"></i>
+                </li>
+                <li class="list-group-item">
+                  Potato<i class="fa fa-trash" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <div class="col-lg-9 pb-3">
+            <!-- <section class="mt-3"> -->
+              <div class="row" id="row_4">
+                <!--THE FOURTH PART: Uses boostrap cards to create all elements for user's interactive interface-->
+
+                <!--card_one-->
+
+                <div class="col-4">
+                  <div class="card">
+                    <!--It will fetch URL from this API endpoint: https://api.spoonacular.com/recipes/complexSearch?query=apple&apiKey= -->
+                    <img
+                    src="https://spoonacular.com/recipeImages/632481-312x231.jpg"
+                    class="card-img-top" alt="Image"" class="card-img-top"
+                    alt="recipe_image">
+                    <div class="card-body">
+                      <!--It will receive input from the user as typed in the  ingredient box and diplay here. It will fetch its march from the available titles from the Recipe API endpoint-->
+                      <p class="card-text">Apple</p>
+                      <!-- It will fetch possible march of the ingredient and display it's title after a GET from  the Recipe API endpoint-->
+                      <h5 class="card-title">Apple Brown Betty</h5>
+
+                      <!--On click, it will fetch details about the recipe from this Recipe API endpoint and display below-->
+
+                      <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--card_two-->
+
+                <div class="col-4">
+                  <div class="card">
+                    <!--It will fetch URL from this API endpoint: https://api.spoonacular.com/recipes/complexSearch?query=apple&apiKey= -->
+                    <img
+                    src="https://spoonacular.com/recipeImages/632543-312x231.jpg"
+                    class="card-img-top" alt="Image"" class="card-img-top"
+                    alt="recipe_image">
+                    <div class="card-body">
+                      <!--It will receive input from the user as typed in the  ingredient box and diplay here. It will fetch its march from the available titles from the Recipe API endpoint-->
+                      <p class="card-text">Apple</p>
+                      <!-- It will fetch possible march of the ingredient and display it's title after a GET from  the Recipe API endpoint-->
+                      <h5 class="card-title">Apple Football</h5>
+
+                      <!--On click, it will fetch details about the recipe from this Recipe API endpoint and display below-->
+
+                      <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--card_three-->
+
+                <div class="col-4">
+                  <div class="card">
+                    <!--It will fetch URL from this API endpoint: https://api.spoonacular.com/recipes/complexSearch?query=apple&apiKey= -->
+                    <img
+                    src="https://spoonacular.com/recipeImages/632577-312x231.jpg"
+                    class="card-img-top" alt="Image"" class="card-img-top"
+                    alt="recipe_image">
+                    <div class="card-body">
+                      <!--It will receive input from the user as typed in the  ingredient box and diplay here. It will fetch its march from the available titles from the Recipe API endpoint-->
+                      <p class="card-text">Apple</p>
+                      <!-- It will fetch possible march of the ingredient and display it's title after a GET from  the Recipe API endpoint-->
+                      <h5 class="card-title">Apple Pie Pancakes</h5>
+
+                      <!--On click, it will fetch details about the recipe from this Recipe API endpoint and display below-->
+
+                      <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- </section> -->
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-
-<!--The fourth row-->
-<div class="row" id="row_4" >
-
-  <!--THE FOURTH PART: Uses boostrap cards to create all elements for user's interactive interface-->
-      
-  <!--card_one-->
-
-  <div class="col-4">
-          <div class="card">
-          <!--It will fetch URL from this API endpoint: https://api.spoonacular.com/recipes/complexSearch?query=apple&apiKey= -->
-              <img src="https://spoonacular.com/recipeImages/632481-312x231.jpg" class="card-img-top" alt="Image"" class="card-img-top" alt="recipe_image">
-              <div class="card-body">
-          <!--It will receive input from the user as typed in the  ingredient box and diplay here. It will fetch its march from the available titles from the Recipe API endpoint-->
-                  <p class="card-text">Apple</p>
-          <!-- It will fetch possible march of the ingredient and display it's title after a GET from  the Recipe API endpoint-->           
-                  <h5 class="card-title">Apple Brown Betty</h5>
-                  
-              <!--On click, it will fetch details about the recipe from this Recipe API endpoint and display below-->
-              
-                  <a href="#" class="btn btn-primary">View Recipe</a>
-              </div>
-              </div>
-  </div>
-
-    <!--card_two-->
-
-  <div class="col-4">
-            <div class="card">
-            <!--It will fetch URL from this API endpoint: https://api.spoonacular.com/recipes/complexSearch?query=apple&apiKey= -->
-                <img src="https://spoonacular.com/recipeImages/632543-312x231.jpg" class="card-img-top" alt="Image"" class="card-img-top" alt="recipe_image">
-                <div class="card-body">
-            <!--It will receive input from the user as typed in the  ingredient box and diplay here. It will fetch its march from the available titles from the Recipe API endpoint-->
-                    <p class="card-text">Apple</p>
-            <!-- It will fetch possible march of the ingredient and display it's title after a GET from  the Recipe API endpoint-->           
-                    <h5 class="card-title">Apple Football</h5>
-                    
-                <!--On click, it will fetch details about the recipe from this Recipe API endpoint and display below-->
-                
-                    <a href="#" class="btn btn-primary">View Recipe</a>
-                </div>
-                </div>
-  </div>
-
-  <!--card_three-->
-
-  <div class="col-4">
-          <div class="card">
-          <!--It will fetch URL from this API endpoint: https://api.spoonacular.com/recipes/complexSearch?query=apple&apiKey= -->
-              <img src="https://spoonacular.com/recipeImages/632577-312x231.jpg" class="card-img-top" alt="Image"" class="card-img-top" alt="recipe_image">
-              <div class="card-body">
-          <!--It will receive input from the user as typed in the  ingredient box and diplay here. It will fetch its march from the available titles from the Recipe API endpoint-->
-                  <p class="card-text">Apple</p>
-          <!-- It will fetch possible march of the ingredient and display it's title after a GET from  the Recipe API endpoint-->           
-                  <h5 class="card-title">Apple Pie Pancakes</h5>
-                  
-              <!--On click, it will fetch details about the recipe from this Recipe API endpoint and display below-->
-
-                  <a href="#" class="btn btn-primary">View Recipe</a>
-              </div>
-              </div>
-  </div>
-
-</div>
-  
-</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
     <script src="assets/scripts/dom.js"></script>
     <script src="assets/scripts/fetch-recipes.js"></script>
     <script src="./assets/scripts/ingredients.js"></script>
-</body>
+  </body>
 </html>
