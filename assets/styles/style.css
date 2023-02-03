@@ -106,6 +106,11 @@ aside {
     margin-top:5px;
 }
 
+.list-group-item{
+  display: flex;
+    justify-content: space-between;
+}
+
 footer {
   position: absolute;
   width: 531px;
