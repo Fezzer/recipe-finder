@@ -1,3 +1,6 @@
+// Declare HTML constant
+const row4EL = $('#row_4');
+
 // Declare variable that will be used to store list of user-typed ingredients
 var ingredients = ["pepper", "egg", "rice"];
 var apiKey = "37fe5fc3489647159a3bb09addfd0c09"
@@ -35,19 +38,22 @@ function displayRecipe(api) {
     for(var i = 0; i < api.length; i++) {
 
     // This will be the TITLE inside the image
-    var title = $('<h2>').text(api[i].title);
+    var cardTitle = $('<h5>')
+    .addClass("card-title")
+    .text(api[i].title);
 
     // This will be the image
     var image = $('<img>').attr("src",api[i].image);
 
-    recipe.append(title);
-    recipe.append(image);
+    var cardDiv = $('<div>').addClass("card");
+    var cardBody = $('<div>').addClass("card-body");
+    var cardButton = $('<a>').attr("href", "#").addClass("btn btn-primary").text("View Recipe");
+
+    // Append all HTML
+    row4EL.append(cardDiv)
+    cardDiv.append(image)
+    cardDiv.append(cardBody)
+    cardBody.append(cardTitle)
+    cardBody.append(cardButton )
     };
 };
-
-/* 
-HTML to print Title and Image
-<div id="api-test">
-      
-</div> 
-*/
