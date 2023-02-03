@@ -1,41 +1,41 @@
 body {
-    background-color: #CEA8A8;
-    margin: 0px;
-  }
-  body {
-    background-color: #CEA8A8;
-    margin: 0px;
-  }
+  background-color: #cea8a8;
+  margin: 0px;
+}
+body {
+  background-color: #cea8a8;
+  margin: 0px;
+}
 .circle {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    overflow: hidden;
-    transition: 1s;
- }
- .circle:hover{
-    width: 280px;
-    height: 280px;
-    transition: 1s;
- }
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: 1s;
+}
+.circle:hover {
+  width: 280px;
+  height: 280px;
+  transition: 1s;
+}
 .circle img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 h3 {
   text-align: center;
   margin-top: 10px;
   color: #fff;
 }
 header {
-    background-color: #410606;
-    color: #fff;
-    padding: 1rem;
-  }
+  background-color: #410606;
+  color: #fff;
+  padding: 1rem;
+}
 .jumbotron {
-  background-color: #CEA8A8;
+  background-color: #cea8a8;
   color: #fff;
   text-align: center;
   padding: 2rem;
@@ -56,11 +56,69 @@ header {
   position: absolute;
   width: 105px;
   height: 50px;
-  background: #D9D9D9;
-  }
+  background: #d9d9d9;
+}
+
+.form-label {
+  font-size: 25px;
+}
+aside {
+  border-right: 3px solid #410606;
+}
+.recepie-search {
+  width: 100%;
+}
+.add-button {
+  background-color: #643f3f;
+  color: white;
+  width: 110px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-button:hover {
+  background-color: #410606;
+  transition: 1s;
+}
+.input-group {
+  margin-top: 20px;
+}
+.input-group-append {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+/* .list-group{
+    border: 1px solid  #410606;
+    border-radius: 5px;
+} */
+.list-group h3{
+    font-size: 22px;
+
+}
+.list-container{
+    margin-top:5px;
+}
+
+.list-group-item{
+  display: flex;
+    justify-content: space-between;
+}
+.recipe_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
-position: absolute;
-width: 531px;
-height: 29px;
-background: #410606;
+  position: absolute;
+  width: 531px;
+  height: 29px;
+  background: #410606;
 }
