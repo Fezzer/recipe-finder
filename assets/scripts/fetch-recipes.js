@@ -46,9 +46,16 @@ function displayRecipe(api) {
         // This will be the image
         var image = $('<img>').attr("src",api[i].image);
 
-        var cardDiv = $('<div>').addClass("card");
-        var cardBody = $('<div>').addClass("card-body");
-        var cardButton = $('<a>').attr("href", "#").addClass("btn btn-primary").text("View Recipe");
+        var cardDiv = $('<div>')
+            .addClass("card");
+
+        var cardBody = $('<div>')
+            .addClass("card-body");
+
+        var cardButton = $('<a>')
+            .attr("href", "#")
+            .attr("recipe-ID", api[i].id)
+            .addClass("btn btn-primary").text("View Recipe");
 
         // Append all HTML
         row4EL.append(cardDiv);
