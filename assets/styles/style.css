@@ -6,6 +6,9 @@ body {
   background-color: #cea8a8;
   margin: 0px;
 }
+.container{
+  margin-top: -25px;
+}
 .circle {
   border-radius: 50%;
   width: 200px;
@@ -54,9 +57,17 @@ header {
 }
 #enter {
   position: absolute;
-  width: 105px;
+  width: 180px;
   height: 50px;
-  background: #d9d9d9;
+  border-radius: 10px;
+  background-color: #643f3f;
+  color: white;
+  font-size: 18px;
+  box-shadow: #410606;
+}
+#enter:hover {
+  background-color: #410606;
+  transition: 1s;
 }
 
 .form-label {
@@ -122,6 +133,11 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.button-enter{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
 }
 
 footer {
