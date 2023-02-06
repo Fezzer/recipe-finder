@@ -23,16 +23,19 @@ function saveIngredients(ingredients) {
 /**
  * Adds a new ingredient and saves to local storage. Will not save the ingredient if it is already in the list.
  * @param {string} ingredient The ingredient to save.
+ * @returns {boolean} Returns true if the ingredient was added to local storage, otherwise returns false.
  */
 function addIngredient(ingredient) {
   const ingredients = getIngredients();
 
   if (ingredients.includes(ingredient)) {
-    return;
+    return false;
   }
 
   ingredients.push(ingredient);
   saveIngredients(ingredients);
+
+  return true;
 }
 
 /**
@@ -97,10 +100,11 @@ function addIngredientFormSubmit(event) {
     return;
   }
 
-  addIngredient(ingredient);
-  ingredientEl.value = "";
+  if (addIngredient(ingredient)) {
+    document.getElementById(INGREDIENT_ID).append(createIngredientElement(ingredient));
+  }
 
-  document.getElementById(INGREDIENT_ID).append(createIngredientElement(ingredient));
+  ingredientEl.value = "";
 }
 
 /**
