@@ -132,7 +132,6 @@ aside {
 .recipe_container {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .button-enter{
   display: flex;
