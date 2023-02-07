@@ -170,7 +170,36 @@ aside {
   color: #410606;
   font-size: 30px;
 }
+#ingredients-list li{
+  
+  font-size: 18px;
 
+}
+.method{
+  background: #410606;
+
+  display: flex;
+  justify-content: center;
+}
+#modal-method{
+  color: white;
+  font-size: 30px;
+}
+.recipe-steps h3{
+  color: #410606;
+  font-size: 25px;
+}
+.recipe-steps p{
+  font-size: 18px;
+}
+.close-button{
+  background-color: #643f3f;
+  color: white;
+}
+.close-button:hover{
+  background: #410606;
+
+}
 footer {
   position: absolute;
   width: 531px;
