@@ -1,4 +1,7 @@
 const INGREDIENTS_KEY = "ingredients";
+const INGREDIENT_ID = "ingredients";
+const INGREDIENT_INPUT_ID = "search-input";
+const INGREDIENT_FORM_ID = "search-form";
 var storageIngredients;
 
 /**
@@ -20,16 +23,19 @@ function saveIngredients(ingredients) {
 /**
  * Adds a new ingredient and saves to local storage. Will not save the ingredient if it is already in the list.
  * @param {string} ingredient The ingredient to save.
+ * @returns {boolean} Returns true if the ingredient was added to local storage, otherwise returns false.
  */
 function addIngredient(ingredient) {
   const ingredients = getIngredients();
 
   if (ingredients.includes(ingredient)) {
-    return;
+    return false;
   }
 
   ingredients.push(ingredient);
   saveIngredients(ingredients);
+
+  return true;
 }
 
 /**
@@ -59,10 +65,11 @@ function createIngredientElement(ingredient) {
   ingredientEl.dataset.name = ingredient;
   ingredientEl.textContent = ingredient;
 
-  const buttonEl = document.createElement("button");
-  buttonEl.textContent = "Delete";
+  const removeEl = document.createElement("i");
+  removeEl.classList.add("fa", "fa-trash");
+  removeEl.setAttribute("aria-hidden", "true");
 
-  ingredientEl.append(buttonEl);
+  ingredientEl.append(removeEl);
 
   return ingredientEl;
 }
@@ -72,7 +79,7 @@ function createIngredientElement(ingredient) {
  * @param {Array} ingredients An array of ingredients.
  */
 function writeIngredientsToDOM(ingredients) {
-  const ingredientsEl = document.getElementById("ingredients");
+  const ingredientsEl = document.getElementById(INGREDIENT_ID);
 
   ingredients.forEach(ingredient => {
     ingredientsEl.append(createIngredientElement(ingredient))
@@ -86,17 +93,18 @@ function writeIngredientsToDOM(ingredients) {
 function addIngredientFormSubmit(event) {
   event.preventDefault();
 
-  const ingredientEl = document.getElementById("new-ingredient");
+  const ingredientEl = document.getElementById(INGREDIENT_INPUT_ID);
   const ingredient = ingredientEl.value.trim();
 
   if (!ingredient) {
     return;
   }
 
-  addIngredient(ingredient);
-  ingredientEl.value = "";
+  if (addIngredient(ingredient)) {
+    document.getElementById(INGREDIENT_ID).append(createIngredientElement(ingredient));
+  }
 
-  document.getElementById("ingredients").append(createIngredientElement(ingredient));
+  ingredientEl.value = "";
 }
 
 /**
@@ -106,7 +114,7 @@ function addIngredientFormSubmit(event) {
 function removeIngredientClick(event) {
   const target = event.target;
 
-  if(!target.matches("button")) {
+  if(!target.matches("i")) {
     return;
   }
 
@@ -116,15 +124,6 @@ function removeIngredientClick(event) {
   removeIngredient(ingredient);
 }
 
-document.getElementById("add-ingredient-form").addEventListener("submit", addIngredientFormSubmit);
-document.getElementById("ingredients").addEventListener("click", removeIngredientClick);
+document.getElementById(INGREDIENT_FORM_ID).addEventListener("submit", addIngredientFormSubmit);
+document.getElementById(INGREDIENT_ID).addEventListener("click", removeIngredientClick);
 writeIngredientsToDOM(getIngredients());
-
-/* HTML for the code as it is.
-<form id="add-ingredient-form">
-    <input type="text" name="ingredient" id="new-ingredient">
-    <button type="submit">Add ingredient</button>
-</form>
-
-<ul id="ingredients" class="list-group"></ul>
-*/
