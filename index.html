@@ -233,12 +233,12 @@
             </button>
           </div>
           <div class="modal-body">
+            <h2>INGREDIENTS</h2>
             <div class="container-fluid">
 
               <!-- DESIGN Puspita: Conflict of styles - container class (modal-content) added so that burgundy background can be removed and text alignment can be set to left -->
               <div class="row modal-sections" style="background-color: white; text-align: left;">
                 <div class="col-lg-4  col-md-12 col-sm-12">
-                  <h2>INGREDIENTS</h2>
 
                   <!-- API Austin: List all ingredients from the API here: -->
                   <ol id="ingredients-list">
@@ -255,16 +255,16 @@
 
                 <!-- API Austin: Container for the image - the image will need to be hooked up from the API -->
                 <div class="col-lg-8  col-md-12 col-sm-12" style="background-color: lightslategray;">
-                  IMAGE
+                  <img id="recipe-image" />
                 </div>
 
               </div>
 
+              <h2 id="modal-method">METHOD</h2>
               <div class="container-fluid">
 
                 <!-- DESIGN Puspita: Conflict of styles - container class (modal-content) added so that burgundy background can be removed and text alignment can be set to left -->
-                <div class="row modal-sections" style="background-color: white; text-align: left;">
-                  <h2 id="modal-method">METHOD</h2>
+                <div id="instructions" class="row modal-sections" style="background-color: white; text-align: left;">
                   <div class="recipe-stpes">
 
                     <!-- API Austin: This will be the first of the step and you will need to hook this up to an API loop to dynamically create the correct number of Steps -->
@@ -299,5 +299,6 @@
     <script src="assets/scripts/dom.js"></script>
     <script src="assets/scripts/fetch-recipes.js"></script>
     <script src="./assets/scripts/ingredients.js"></script>
+    <script src="./assets/scripts/recipe-instructions.js"></script>
   </body>
 </html>
