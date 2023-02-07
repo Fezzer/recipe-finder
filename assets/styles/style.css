@@ -6,7 +6,7 @@ body {
   background-color: #cea8a8;
   margin: 0px;
 }
-.container{
+.container {
   margin-top: -25px;
 }
 .circle {
@@ -134,10 +134,36 @@ aside {
   justify-content: center;
   align-items: center;
 }
-.button-enter{
+.button-enter {
   display: flex;
   justify-content: center;
   margin-top: 5px;
+}
+.modal-header{
+  background-color: #410606;
+}
+.modal-title{
+  color: #fff;
+  font-size: 35px;
+
+}
+.close{
+  
+  color: white;
+  font-size: 35px;
+
+}
+.close:hover{
+  color: white;
+}
+.close span:hover{
+  color: white;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  background: #7c4444;
 }
 
 footer {
