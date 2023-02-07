@@ -146,3 +146,40 @@ footer {
   height: 29px;
   background: #410606;
 }
+
+
+.card {
+  width: 32.33%;
+  float: left;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 2px;
+  font-family: arial;
+  }
+
+.card-body {
+  padding: 2px 16px;
+}
+
+img {
+  width: auto;
+  height: auto; /* this line added to keep aspect ratio */
+}
+
+.btn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #410606;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
