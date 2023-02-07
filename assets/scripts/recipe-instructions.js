@@ -46,7 +46,7 @@ function addInstructions(instructions) {
 
     const h3 = document.createElement("h3");
     h3.textContent = `Step ${e.number}`;
-    h3.style = "color: black; text-align: left;";
+    h3.style = " text-align: left;";
 
     const p = document.createElement("p");
     p.classList.add("recipe-steps");

@@ -6,7 +6,7 @@ body {
   background-color: #cea8a8;
   margin: 0px;
 }
-.container{
+.container {
   margin-top: -25px;
 }
 .circle {
@@ -134,12 +134,72 @@ aside {
   justify-content: center;
   align-items: center;
 }
-.button-enter{
+.button-enter {
   display: flex;
   justify-content: center;
   margin-top: 5px;
 }
+.modal-header {
+  background-color: #410606;
+}
+.modal-title {
+  color: #fff;
+  font-size: 35px;
+}
+.close {
+  color: white;
+  font-size: 35px;
+}
+.close:hover {
+  color: white;
+}
+.close span:hover {
+  color: white;
+}
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+.image-container img {
+  width: 100%;
+  height: 80%;
+}
+.modal-body h2 {
+  color: #410606;
+  font-size: 30px;
+}
+#ingredients-list li{
+  
+  font-size: 18px;
+
+}
+.method{
+  background: #410606;
+
+  display: flex;
+  justify-content: center;
+}
+#modal-method{
+  color: white;
+  font-size: 30px;
+}
+.recipe-steps h3{
+  color: #410606;
+  font-size: 25px;
+}
+.recipe-steps p{
+  font-size: 18px;
+}
+.close-button{
+  background-color: #643f3f;
+  color: white;
+}
+.close-button:hover{
+  background: #410606;
+
+}
 footer {
   position: absolute;
   width: 531px;

@@ -12,6 +12,8 @@ function getIngredients() {
   return storageIngredients ?? JSON.parse(localStorage.getItem(INGREDIENTS_KEY)) ?? [];
 }
 
+
+
 /**
  * Saves the ingredients to local storage.
  * @param {Array} ingredients An array of ingredients to save.
