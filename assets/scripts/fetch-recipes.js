@@ -54,7 +54,7 @@ function displayRecipe(api) {
 
         var cardButton = $('<a>')
             .attr("href", "#")
-            .attr("recipe-ID", api[i].id)
+            .attr("data-recipeId", api[i].id)
             .addClass("btn btn-primary").text("View Recipe");
 
         // Append all HTML
