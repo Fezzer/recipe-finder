@@ -40,7 +40,22 @@ function addInstructions(instructions) {
   const instructionsContainer = document.getElementById("instructions");
   instructionsContainer.textContent = "";
 
-  instructions.steps.forEach(e => {
+  // Handle empty array return from the API.
+  if (!instructions?.length) {
+    const container = document.createElement("div");
+    container.classList.add("recipe-steps", "col-12");
+
+    const h3 = document.createElement("h3");
+    h3.textContent = `No instructions are available for this recipe.`;
+    h3.style = "color: black; text-align: left;";
+
+    container.append(h3);
+    instructionsContainer.append(container);
+
+    return;
+  }
+
+  instructions[0].steps.forEach(e => {
     const container = document.createElement("div");
     container.classList.add("recipe-steps", "col-12");
 
@@ -75,8 +90,7 @@ async function populateModal(recipe, instructionsPromise) {
   image.setAttribute("alt", recipe.title);
 
   const instructions = await instructionsPromise;
-  console.log(instructions);
-  addInstructions(instructions[0]);
+  addInstructions(instructions);
 }
 
 /**
