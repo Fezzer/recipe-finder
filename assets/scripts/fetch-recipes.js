@@ -57,9 +57,8 @@ function displayRecipe(api) {
             .addClass("card-body");
 
         var cardButton = $('<a>')
-            .attr("href", "#")
             .attr("data-index", i)
-            .addClass("btn btn-primary").text("View Recipe");
+            .addClass("btn-primary").text("View Recipe");
 
         // Append all HTML
         row4EL.append(cardDiv);
