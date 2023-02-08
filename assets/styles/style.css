@@ -215,10 +215,13 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 2px;
   font-family: arial;
+  text-align: center;
   }
 
 .card-body {
   padding: 2px 16px;
+
+
 }
 
 img {
@@ -229,7 +232,7 @@ img {
 .btn {
   border: none;
   outline: 0;
-  display: inline-block;
+  display: block;
   padding: 8px;
   color: white;
   background-color: #410606;
@@ -242,3 +245,14 @@ img {
   background-color: #555;
 }
 
+.btn-primary {
+  position: absolute;
+  padding: 5px;
+  bottom: 0;
+  left: 0;  
+  padding: 8px;
+  color: white;
+  background-color: #410606;
+  width: 100%;
+  cursor: pointer;
+}
