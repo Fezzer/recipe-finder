@@ -1,3 +1,7 @@
+:root {
+  --site-color: #410606;
+}
+
 body {
   background-color: #cea8a8;
   margin: 0px;
@@ -273,4 +277,12 @@ img {
   .col-lg-3 {
     max-width: 100%;
 }
+}
+
+footer {
+  color: white;
+  width: 100%;
+  background: var(--site-color);
+  height: auto;
+  text-align: center;
 }
