@@ -1,5 +1,5 @@
 # Recipe Finder
-
+![Front View](./assets/images/front%20view.png)
 ## Description
 
 A web-based recipe finder that allows you to search for delicious recipes based on ingredients you already have at home. With the help of the Spoonacular API, you can search for recipes and get step-by-step instructions on how to cook your favorite meals.
@@ -11,16 +11,18 @@ A web-based recipe finder that allows you to search for delicious recipes based 
 
 
 ## How to Use
-
+![Front View](./assets/images/recipe_search.png)
 1. Enter ingredients in the search bar
 2. View the list of recipes that match your search
 3. Select a recipe to view detailed instructions on how to cook the recipe
-
+![Front View](./assets/images/instruction.png)
 ## Technologies
 
 - JavaScript
 - HTML
 - CSS
+- BOOTSTRAP
+-
 
 ## API
 
