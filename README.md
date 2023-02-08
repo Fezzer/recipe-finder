@@ -12,7 +12,7 @@ A web-based recipe finder that allows you to search for delicious recipes based 
 
 ## How to Use
 
-The live site can be found here, [https://fezzer.github.io/recipe-finder/](https://fezzer.github.io/recipe-finder/)
+The live site can be found here, [https://fezzer.github.io/recipe-finder/](https://fezzer.github.io/recipe-finder/).
 
 ![Front View](./assets/images/recipe_search.png)
 1. Enter ingredients in the search bar
