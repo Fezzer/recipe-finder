@@ -132,6 +132,7 @@ aside {
 .recipe_container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .button-enter {
   display: flex;
@@ -216,6 +217,7 @@ footer {
   margin: 2px;
   font-family: arial;
   text-align: center;
+  height: 275px;
   }
 
 .card-body {
@@ -255,4 +257,20 @@ img {
   background-color: #410606;
   width: 100%;
   cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+}
+
+.container-fluid {
+  margin-top: 25px;
+}
+
+/* Fixes the ingredients search bar from overlapping the recipe UI*/
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    max-width: 100%;
+}
 }
