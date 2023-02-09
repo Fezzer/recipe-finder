@@ -1,3 +1,7 @@
+:root {
+  --site-color: #410606;
+}
+
 body {
   background-color: #cea8a8;
   margin: 0px;
@@ -73,9 +77,6 @@ header {
 .form-label {
   font-size: 25px;
 }
-aside {
-  border-right: 3px solid #410606;
-}
 .recepie-search {
   width: 100%;
 }
@@ -105,10 +106,6 @@ aside {
   display: flex;
   justify-content: space-between;
 }
-/* .list-group{
-    border: 1px solid  #410606;
-    border-radius: 5px;
-} */
 .list-group h3 {
   font-size: 22px;
 }
@@ -273,4 +270,18 @@ img {
   .col-lg-3 {
     max-width: 100%;
 }
+}
+
+footer {
+  color: white;
+  width: 100%;
+  background: var(--site-color);
+  height: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer img {
+  display: inline-block;
+  width: 2em;
 }
