@@ -77,9 +77,6 @@ header {
 .form-label {
   font-size: 25px;
 }
-aside {
-  border-right: 3px solid #410606;
-}
 .recepie-search {
   width: 100%;
 }
@@ -109,10 +106,6 @@ aside {
   display: flex;
   justify-content: space-between;
 }
-/* .list-group{
-    border: 1px solid  #410606;
-    border-radius: 5px;
-} */
 .list-group h3 {
   font-size: 22px;
 }
@@ -285,4 +278,10 @@ footer {
   background: var(--site-color);
   height: auto;
   text-align: center;
+  margin-top: 40px;
+}
+
+footer img {
+  display: inline-block;
+  width: 2em;
 }
